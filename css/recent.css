@@ -7,7 +7,7 @@ html, body{
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 170px 800px 800px 170px;
+  grid-template-rows: 170px 900px 800px 170px;
   grid-template-areas: 
   "hd"
   "main"
@@ -80,7 +80,20 @@ html, body{
 }
 
 img {
-  width: 83%;
+  width: 100%;
+}
+
+figcaption {
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 12px;
+  font-style: italic;
+  opacity: 80%;
 }
 
 /* Side bar area containing profile card and bio */
@@ -326,7 +339,7 @@ img {
   .container {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 900px 1000px 220px;
+    grid-template-rows: 170px 950px 1000px 220px;
     grid-template-areas: 
     "hd"
     "main"
@@ -358,6 +371,14 @@ img {
     padding-left: 20px;
   }
 
+  figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+  }
+
   img {
     width: 100%;
   }
@@ -381,7 +402,7 @@ img {
 
   .content1 p {
     font-size: 15px;
-    padding: 40px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     line-height: 1.6;
   }
   
@@ -505,7 +526,7 @@ img {
   .container {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 1000px 700px 170px;
+    grid-template-rows: 170px 1100px 700px 170px;
     grid-template-areas: 
     "hd"
     "main"
@@ -539,7 +560,11 @@ img {
     "main main main main main main sd sd"
     "ft ft ft ft ft ft ft ft";
   }
-  
+
+  img {
+    width: 83%;
+  }
+
   .card {
     display: grid;
     grid-template-columns: 1fr;

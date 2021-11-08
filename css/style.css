@@ -1,3 +1,7 @@
+@import "header.css";
+@import "footer.css";
+@import "subscribe.css";
+
 html, body{
   margin: 0;
 }
@@ -23,38 +27,9 @@ html, body{
   padding: 30px;
 }    
 
-/* Header styling */
-
 .header {
-  grid-area: hd;
   text-align: center;
   background: black;
-}
-
-.header h1 {
-  font-size: 35px;
-}
-
-.header ul {
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: right;
-}
-
-.header ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.header ul li {
-  display: inline-block;
-  padding: 15px 8px;
-}
-
-.header ul li a:hover {
-  opacity: 1;
 }
 
 /* Main content */
@@ -267,158 +242,12 @@ html, body{
   box-shadow: 3px 3px 12px rgba(80, 80, 80, 0.4);
 }
 
-/* Footer */
+/* Footer Theme Coloring */
 
 .footer {
   grid-area: ft;
   padding: 20px;
   background: linear-gradient(to bottom, rgb(160, 0, 133), black);
-}
-
-.footer .social {
-  text-align: center;
-  padding-bottom: 15px;
-  color: white;
-}
-
-.footer .social a {
-  font-size: 20px;
-  color: inherit;
-  border: 1px solid #ccc;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 20%;
-  margin: 0 8px;
-  opacity: 0.75;
-}
-
-.footer .social a:hover {
-  opacity: 0.9;
-}
-
-.footer ul {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.footer ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.footer ul li a:hover {
-  opacity: 1;
-}
-
-.footer .copyright {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 9px;
-  color: #aaa;
-}
-
-/* Subscribe button */
-
-.wrapper {
-  height: 30px;
-  width: 100px;
-  display: grid;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  bottom: 110px;
-}
-
-.wrapper .btn-1 {
-  position: absolute;
-  height: 115%;
-  width: 100%;
-  border: 1px solid #ccc;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 35px;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  opacity: 0.75;
-}
-
-#click:checked ~ .btn-1 {
-  height: 40px;
-  width: 60px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.wrapper .field {
-  position: relative;
-  height: 100%;
-  width: 0%;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.5s cubic-bezier(1,-0.01,.43,.85);
-}
-
-.wrapper #click {
-  display: none;
-}
-
-#click:checked ~ .field{
-  opacity: 1;
-  width: 100%;
-  pointer-events: auto;
-}
-
-.wrapper .field input {
-  height: 100%;
-  width: 100%;
-  border: 2px solid rgb(83, 83, 83);
-  border-radius: 5px;
-  padding: 0 75px 0 15px;
-  font-size: 15px;
-  outline: none;
-}
-
-.wrapper .field .btn-2 {
-  position: absolute;
-  left: 133px;
-  top: 107%;
-  transform: translateY(-100%);
-  height: 31px;
-  width: 60px;
-  color: rgb(100, 100, 100);
-  background: #000000;
-  border-radius: 5px;
-  line-height: 30px;
-  cursor: pointer;
-  font-size: 11px;
-}
-
-.btn-2 {
-  opacity: 0.80;
-}
-
-.wrapper .btn-1:hover {
-  opacity: 0.9;
-}
-  
-.wrapper .btn-2:hover {
-  opacity: 0.9;
 }
 
 /* Small screen */ 
@@ -437,6 +266,12 @@ html, body{
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI';
     text-align: center;
+  }
+
+  .header {
+    grid-area: hd;
+    text-align: center;
+    background: black;
   }
 
   .header h1 {
@@ -524,6 +359,12 @@ html, body{
     grid-template-rows: 150px;
   }
 
+  .footer {
+    grid-area: ft;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(160, 0, 133), black);
+  }
+
   .footer ul {
     font-size: 12px;
   }
@@ -569,7 +410,19 @@ html, body{
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI';
     text-align: center;
-    }
+  }
+    
+  .header {
+    grid-area: hd;
+    text-align: center;
+    background: black;
+  }
+
+  .footer {
+    grid-area: ft;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(160, 0, 133), black);
+  }
 }
 
 
@@ -587,6 +440,12 @@ html, body{
     "ft ft ft ft ft ft ft ft";
   }
 
+  .header {
+    grid-area: hd;
+    text-align: center;
+    background: black;
+  }
+  
   .header h1 {
     font-size: 35px;
     text-align: left;
@@ -607,6 +466,8 @@ html, body{
   }
 
   .footer {
-    padding-right: 590px;
+    grid-area: ft;
+    padding: 20px 590px 20px 20px;
+    background: linear-gradient(to bottom, rgb(160, 0, 133), black);
   }
 }
