@@ -220,6 +220,18 @@ blockquote {
   padding: 0 8px;
 }
 
+.side figure img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.side figure:active img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
 /* Small screen phone */ 
 
 @media(max-width:420px) {
@@ -492,7 +504,6 @@ blockquote {
   /* Footer */
 
   .footer {
-    padding-right: 350px;
     background: linear-gradient(to bottom, rgb(106, 106, 106), black);
   }
 
@@ -502,6 +513,18 @@ blockquote {
  
   img {
     width: 83%;
+  }
+
+  .side figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .side figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
   }
 }
 
