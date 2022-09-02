@@ -252,7 +252,7 @@ html, body{
 
 /* Small screen */ 
 
-@media(max-width:320px) {
+@media(max-width:428px) {
 
   .container {
     display:grid;
@@ -303,7 +303,7 @@ html, body{
   .card1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 130px 70px;
+    grid-template-rows: 190px 80px 80px;
     grid-template-areas: 
     "img" 
     "txt";
@@ -316,14 +316,17 @@ html, body{
 
   .card1-txt h3 {
     font-size: 16px;
+    line-height: 0px;
   }
   
   .card1-txt p {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 15px;
   }
   
   .card1-txt .date {
     font-size: 12px;
+    line-height: 0px;
   }
 
   .side {
@@ -361,7 +364,7 @@ html, body{
 
   .footer {
     grid-area: ft;
-    padding: 20px;
+    padding: 0;
     background: linear-gradient(to bottom, rgb(160, 0, 133), black);
   }
 
